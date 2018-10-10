@@ -1,0 +1,47 @@
+[
+{
+    "id" : 0,
+    "name" : "Sun",
+    "description" : "A big star that heat us up"
+},
+{
+    "id" : 1,
+    "name" : "Earth",
+    "description" : "Our planet, the blue planet "
+},
+{
+    "id" : 2,
+    "name" : "Space",
+    "description" : "Infinite space without oxygen"
+},
+{
+    "id" : 3,
+    "name" : "Clément",
+    "description" : "A specimen living on the moon"
+},
+{
+    "id" : 4,
+    "name" : "Astéroïdes",
+    "description" : "Météores venues de l'espace !"
+},
+{
+    "id" : 5,
+    "name" : "Constellation",
+    "description" : "Un groupement de plusieurs étoiles afin de crée un système"
+},
+{
+    "id" : 6,
+    "name" : "Aymeric",
+    "description" : "Satelisé par les Maths (et France YOYOYO) !"
+},
+{
+    "id" : 7,
+    "name" : "Mon appartement",
+    "description" : "Amats de déchets spaciaux !"
+},
+{
+    "id" : 8,
+    "name" : "Geomagnetic storm",
+    "description" : "A natural phenomena that spread extremely hot matter"
+}
+]
