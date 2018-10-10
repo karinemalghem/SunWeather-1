@@ -10,6 +10,7 @@ import { GlossaireComponent } from './glossaire/glossaire.component';
 import { MissionsComponent } from './missions/missions.component';
 
 import { GlossaireService } from './glossaire.service';
+import { ApodService } from '../apod.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { GlossaireService } from './glossaire.service';
     HttpModule,
     NgbModule.forRoot()
   ],
-  providers: [GlossaireService],
+  providers: [GlossaireService, ApodService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

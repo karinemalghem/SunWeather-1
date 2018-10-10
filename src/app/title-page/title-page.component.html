@@ -1,3 +1,55 @@
-<p>
-  title-page works!
-</p>
+<!--<h2>{{ infos[1] }}</h2>
+<img src="{{ infos[0] }}" />
+<p>{{ infos[2] }}</p>
+<cite>{{ infos[3] }}</cite>
+-->
+
+<!--<div class="text-white" *ngFor="let apod of apods">
+  <h2>{{ apod.title }}</h2>
+  <img src="{{ apod.url }}" />
+  <p>{{ apod.explanation }}</p>
+  <cite>{{ apod.date }}</cite>
+</div>-->
+
+<div class="container-fluid mb-5">
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
+            <li data-target="#carousel" data-slide-to="4"></li>
+            <li data-target="#carousel" data-slide-to="5"></li>
+            <li data-target="#carousel" data-slide-to="6"></li>
+        </ol>
+        <div class="carousel-inner">
+
+          <!-- ICI -->
+            <div class="carousel-item active">
+                <img id="img-carousel-0" class="d-block w-100" src="{{ today?.url }}" alt="First slide">
+
+                <div class="carousel-caption d-none d-md-block pb-5">
+                    <h1>{{ today?.title }}</h1>
+                    <cite>{{ today?.date }}</cite>
+                </div>
+            </div>
+
+            <div class="carousel-item" *ngFor="let apod of apods">
+                <img id="{{ 'img-carousel-' + apod.id }}" class="d-block w-100" src="{{ apod.url }}" alt="slide">
+
+                <div class="carousel-caption d-none d-md-block pb-5">
+                    <h1>{{ apod.title }}</h1>
+                    <cite>{{ apod.date }}</cite>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>

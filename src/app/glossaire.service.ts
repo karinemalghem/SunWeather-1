@@ -26,7 +26,6 @@ export class GlossaireService
         (data: Response): Glossaire[] => 
         {
           let raw: any = data.json();
-          //console.log(raw);
           let items: Array<any> = raw;
           //let i: number = items.length;
           let definitions : Glossaire[] = [];
