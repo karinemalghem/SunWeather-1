@@ -9,6 +9,7 @@ section {
 /* couleur fond de page */
 #footer {
     background: #000000 !important;
+    line-height : 50%; 
 }
 
 
