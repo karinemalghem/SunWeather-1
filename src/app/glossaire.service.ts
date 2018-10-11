@@ -20,7 +20,7 @@ export class GlossaireService
 
   public getJSON() : Observable<Glossaire[]>
   {
-    return this.serviceHttp.get("./glossaire.json").pipe
+    return this.serviceHttp.get("assets/glossaire.json").pipe
     (
       map(
         (data: Response): Glossaire[] => 

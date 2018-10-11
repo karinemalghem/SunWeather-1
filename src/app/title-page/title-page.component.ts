@@ -50,8 +50,6 @@ export class TitlePageComponent implements OnInit {
 
             for (let i=0 ; i < this.apods.length ; i++)
               this.apods[i].setId(i + 1);
-
-            console.log(this.today.mediaType);
           }
         }
       );

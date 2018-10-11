@@ -2,3 +2,18 @@ button
 {
     font-size : 1.5em;
 }
+
+.definition
+{
+    font-size : 1.2em;
+}
+
+.bg-black
+{
+    background-color : black;
+}
+
+.btn-link
+{
+    color : white;
+}
