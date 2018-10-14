@@ -15,12 +15,7 @@
     <div id="carousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel" data-slide-to="1"></li>
-            <li data-target="#carousel" data-slide-to="2"></li>
-            <li data-target="#carousel" data-slide-to="3"></li>
-            <li data-target="#carousel" data-slide-to="4"></li>
-            <li data-target="#carousel" data-slide-to="5"></li>
-            <li data-target="#carousel" data-slide-to="6"></li>
+            <li *ngFor="let apod of apods" data-target="#carousel" attr.data-slide-to="{{apod.id}}"></li>
         </ol>
         <div class="carousel-inner">
 
