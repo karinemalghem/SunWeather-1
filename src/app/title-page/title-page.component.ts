@@ -61,4 +61,9 @@ export class TitlePageComponent implements OnInit {
     }
   }
 
+  public setDisplay() : void
+  {
+    $(".carousel-caption").toggleClass("d-md-block");
+  }
+
 }

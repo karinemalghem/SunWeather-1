@@ -12,6 +12,9 @@
 </div>-->
 
 <div class="container-fluid mb-5">
+    
+    <p class="text-white">Display/Hide text <input class="d-md-inline-block" type="checkbox" (click)="setDisplay()" checked /></p>
+
     <div id="carousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -21,20 +24,22 @@
         <div class="carousel-inner">
 
             <div class="carousel-item active">
-                <img id="img-carousel-0" class="d-block w-100" src="{{ today?.url }}" alt="First slide">
+                <img id="img-carousel-0" class="d-block w-100" src="{{ today.url }}" alt="First slide">
 
                 <div class="carousel-caption d-none d-md-block pb-5">
-                    <h1>{{ today?.title }}</h1>
-                    <cite>{{ today?.date }}</cite>
+                    <h1>{{ today.title }}</h1>
+                    <cite>{{ today.date }}</cite>
+                    <blockquote>{{ today.explanation }}</blockquote>
                 </div>
             </div>
 
             <div class="carousel-item" *ngFor="let apod of apods">
-                <img id="{{ 'img-carousel-' + apod.id }}" class="d-block w-100" src="{{ apod.url }}" alt="slide">
+                <img id="{{ 'img-carousel-' + apod.id }}" class="d-block w-100" src="{{ apod.url }}" attr.alt="{{apod.id}} + ' slide'">
 
                 <div class="carousel-caption d-none d-md-block pb-5">
                     <h1>{{ apod.title }}</h1>
                     <cite>{{ apod.date }}</cite>
+                    <blockquote>{{ apod.explanation }}</blockquote>
                 </div>
             </div>
         </div>
