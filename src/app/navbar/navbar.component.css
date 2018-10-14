@@ -3,5 +3,29 @@
 }
    
 .dropdown-item:hover {
-    background-color: #000;
+    background-color: #555;
+}
+
+
+@media (min-width: 768px) {
+    .btn:hover
+    {
+        background-color : white;
+    }
+}
+
+.btn
+{
+    font-size : 1.5rem;
+}
+
+.btn:hover
+{
+    background : #555;
+    border : 1px solid #FF0;
+}
+
+.navbar img
+{
+    cursor : pointer; 
 }
