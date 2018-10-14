@@ -1,21 +1,13 @@
-button
-{
-    font-size : 1rem;
-}
-
 .definition
 {
-    font-size : 1rem;
+    font-family: "Times New Roman", Times, serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-size : 1.5em;
 }
 
 .card-header
 {
     border-bottom : 1px solid white;
-}
-
-.card
-{
-    border : 2px solid white;
 }
 
 .break-word
@@ -38,6 +30,17 @@ button
     color : white;
 }
 
+button
+{
+    text-decoration : none; 
+    font-size : 1em;
+    background-color : #000;
+    border : none;
+    color : #FFF;
+    font-weight : normal;
+    transition : all 1s ease-in-out; 
+}
+
 button:hover
 {
     text-decoration: underline;
@@ -51,10 +54,13 @@ button:hover
 .card
 {
     opacity : 0.75;
+    border : 2px solid white;
+    transition : all 2s ease-in-out; 
 }
 
 .card:hover
 {
     opacity : 1;
-    transition : opacity 2s;
+    border : 2px solid #FF0;
+    transition : all 2s ease-in-out;
 }
