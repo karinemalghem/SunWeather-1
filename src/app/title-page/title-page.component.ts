@@ -4,6 +4,8 @@ import { ApodService } from '../../apod.service';
 import { Apod } from '../../apod';
 import { Observable } from 'rxjs';
 
+import * as $ from "jquery";
+
 @Component({
   selector: 'app-title-page',
   templateUrl: './title-page.component.html',
