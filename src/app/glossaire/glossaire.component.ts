@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GlossaireService } from '../glossaire.service';
-import { Glossaire } from '../../glossaire';
+import { Glossaire } from '../glossaire';
 
 @Component({
   selector: 'app-glossaire',
@@ -17,21 +17,19 @@ import { Glossaire } from '../../glossaire';
 
 export class GlossaireComponent implements OnInit {
 
-  public definitions : Glossaire[];
-  private glossaireService : GlossaireService;
-  
-  constructor(glossaire : GlossaireService) { 
+  public definitions: Glossaire[];
+  private glossaireService: GlossaireService;
+
+  constructor(glossaire: GlossaireService) {
     this.glossaireService = glossaire;
     this.definitions = [];
   }
 
-  ngOnInit() 
-  { 
+  ngOnInit() {
     this.glossaireService.getJSON().subscribe(
-      (param : Glossaire[]) => {
+      (param: Glossaire[]) => {
         this.definitions = param;
-        this.definitions.sort(function(a,b)
-        {
+        this.definitions.sort(function(a, b) {
           return a.name.localeCompare(b.name);
         });
       }

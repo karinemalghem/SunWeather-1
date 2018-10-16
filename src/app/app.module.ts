@@ -11,10 +11,11 @@ import { GlossaireComponent } from './glossaire/glossaire.component';
 import { MissionsComponent } from './missions/missions.component';
 
 import { GlossaireService } from './glossaire.service';
-import { ApodService } from '../apod.service';
+import { ApodService } from './apod.service';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { SunIdComponent } from './sun-id/sun-id.component';
+import { EvenementComponent } from './evenement/evenement.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SunIdComponent } from './sun-id/sun-id.component';
     MissionsComponent,
     NavbarComponent,
     FooterComponent,
-    SunIdComponent
+    SunIdComponent,
+    EvenementComponent
   ],
   imports: [
     BrowserModule,
