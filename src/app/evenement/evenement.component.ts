@@ -26,7 +26,10 @@ export class EvenementComponent implements OnInit {
 
     this.evenements[0].setDetails(this.getLoremIpsum());
     this.evenements[1].setDetails(this.getLoremIpsum());
+    this.evenements[2].setDetails(this.getLoremIpsum());
+    this.evenements[3].setDetails(this.getLoremIpsum());
     this.evenements[4].setDetails(this.getLoremIpsum());
+    this.evenements[5].setDetails(this.getLoremIpsum());
   }
 
   public getLoremIpsum(): string {
